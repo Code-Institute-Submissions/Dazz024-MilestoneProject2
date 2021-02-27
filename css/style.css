@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=PT+Sans&display=swap');            /*This imports the fonts pt sans and goldman*/
+
+*{                                 /*This just sets the default limits*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{                                        /*Sets the defult font and overall colour of the page*/
+    font-family: pt sans;
+    background-color: darkblue;
+    color: white;
+}
+
+#logo{                                      /*The styling of the logo*/
+    font-family: goldman;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    float: left;
+    font-size: 300%;
+    margin-left: 2%;
+    color: black;
+}
+
+header{                                         /*Makes the top bar white*/
+    background-color: white;
+}
+
+#nav{                                           /*The styling of the navigation bar*/
+    list-style-type: none;
+    letter-spacing: 3px;
+    font-family: goldman;
+    font-size: 200%;
+    color: inherit;
+    height: 5em;
+    color: black;
+}
+
+#logo, #nav{                                    /*Pushes logo and navbar away from the top of the page*/
+    line-height: 100px;
+}
+
+#nav li{                                        /*Pushes all navbar elements to the right away from the logo*/
+    float: right;
+    margin-right: 50px;
+}
+
+a{                                               /*Ensures all anchors have the same styling as the rest of the body*/
+    text-decoration: none;
+    color: inherit;
+}
+
+.active{                                        /*Underlines the current page you're on*/
+  border-bottom: 1px solid white;
+}
+
+#hero-video video{                              /*Sizes the callout video*/
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.article-img img{                               /*Sizes the article images*/
+    width: 45%;
+    height: auto;
+    margin-left: 5%;
+}
+
+.article-text{                                  /*Deals with the fonts and format of the article text*/
+    width: 45%;
+    padding: 0px 2.5%;
+    float: right;
+    font-size: 120%;
+}
+
+.article-header{                                /*Puts the article headers in the middle with a bit of space around them*/
+    text-align: center;
+    padding: 50px;
+}
+
+footer{                                            /*This makes the background of the footer white and only takes as much space as it needs to*/
+    height: auto;
+    background-color: white;
+}
+
+.shortcuts{                                     /*Puts the small icons in the middle of the footer*/
+    text-align: center;
+}
+
+.shortcuts li{                                  /*This ensures they are listed horizontally*/
+    display: inline;
+}
+
+.shortcuts i{                                   /*This styles the icons in the footer*/
+    margin: 1%;
+    padding: 2%;
+    color: black;
+    font-size: 150%;
+}
+
+table{                                          /*This sizes the table*/
+    width: 100%;
+    height: 50em;
+    border-spacing: 1em;
+}
+
+table, th, td {                                 /*This puts a border around each cell in the table*/
+  border: 1px solid white;
+}
+
+button{                                     /*This centralises the buttons*/
+    margin:auto;
+    display:block;
+    height: 20%;
+    width: 20%;
+}
+
+#start-container{                           /*This makes the start button central with the use of flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+@media screen and (max-width: 1250px){                      /*All this moves certain features if the screen gets smaller*/
+    .article-text{
+        float: none;
+        text-align: center;
+        width: 95%;
+        padding: 2.5%;
+    }
+
+    .article-img img{
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+        padding: 2.5%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .active{
+        display: none;
+    }
+}
