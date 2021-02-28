@@ -32,8 +32,9 @@ header{                                         /*Makes the top bar white*/
     font-family: goldman;
     font-size: 200%;
     color: inherit;
-    height: 5em;
+    height: 100px;
     color: black;
+    width: 100%;
 }
 
 #logo, #nav{                                    /*Pushes logo and navbar away from the top of the page*/
@@ -99,14 +100,14 @@ footer{                                            /*This makes the background o
 }
 
 table{                                          /*This sizes the table*/
-    width: 80%;
-    height: 50em;
+    width: 30vw;
+    height: 30vw;
     border-spacing: 1em;
     margin: auto;
 }
 
 table, th, td {                                 /*This puts a border around each cell in the table*/
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 button{                                     /*This centralises the buttons*/
@@ -133,13 +134,18 @@ button{                                     /*This centralises the buttons*/
 }
 
 .space{
-    padding: 1em;
-    width: 100%;
+    width: 90%;
     text-align: center;
+    margin: auto;
 }
 
 .space p {
     font-size: 1.5em;
+}
+
+.disabled {                           /*This makes the element appear to be disabled (cannot be clicked either)*/
+    opacity: .33;
+    pointer-events: none;
 }
 
 .flash {                           /*This makes the element flash*/
@@ -151,6 +157,12 @@ button{                                     /*This centralises the buttons*/
     }
     50%, 100% {
         background-color: internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    }
+}
+
+@media screen and (max-width: 1550px){
+    #nav{
+        height: 200px;
     }
 }
 

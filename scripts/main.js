@@ -63,6 +63,7 @@ $(document).ready(() => {
 
             $("table").addClass("disabled");
             $("#start").removeClass("disabled");
+            alert("Oops missed that one!")
         } else {
             var check = game.playerGuesses.length == game.currentGame.length;
             if (check) {
