@@ -32,23 +32,34 @@
                 </ul>
             </nav>
         </header>
-            
-        <section>
+
+        <input id="game_difficulty" type="hidden" value="easy">
+        
+        <br><br>
+
+        <section class="space">
             <h2>Simon Says (Easy Mode)</h2>
             <p>This is a pattern memory game similar called Simon Says. You must click the buttons in the order that they flash red in. Try to beat your high score!</p>
             <div id="start-container"><button id="start">Start!</button></div>
-            <table>                                                     <!--placeholder for the game-->
+        </section>
+
+        <section>
+            <table class="disabled">                                                     <!--placeholder for the game-->
                 <tr>
-                    <td><button>Test1</button></td>
-                    <td><button>Test2</button></td>
+                    <td><button data-button="1" class="game-button"></button></td>
+                    <td><button data-button="2" class="game-button"></button></td>
                 </tr>
             </table>
         </section>
 
-        <section>
-            <h2>Current Score:</h2>                                                 <!--placeholder for the scores-->
-            <h2>High Score:</h2>
+        <br><br>
+
+        <section class="space">
+            <h2>Current Score: <span id="current_score">0</span></h2>                                                 <!--placeholder for the scores-->
+            <h2>High Score: <span id="high_score">0</span></h2>
         </section>
+
+        <br><br>
 
         <footer>
             <ul class="shortcuts">                                                                                           <!--the footer bar with icons to social medias-->

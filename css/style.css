@@ -8,7 +8,7 @@
 
 body{                                        /*Sets the defult font and overall colour of the page*/
     font-family: pt sans;
-    background-color: darkblue;
+    background-color: rgb(100, 216, 245);
     color: white;
 }
 
@@ -99,9 +99,10 @@ footer{                                            /*This makes the background o
 }
 
 table{                                          /*This sizes the table*/
-    width: 100%;
+    width: 80%;
     height: 50em;
     border-spacing: 1em;
+    margin: auto;
 }
 
 table, th, td {                                 /*This puts a border around each cell in the table*/
@@ -111,8 +112,9 @@ table, th, td {                                 /*This puts a border around each
 button{                                     /*This centralises the buttons*/
     margin:auto;
     display:block;
-    height: 20%;
-    width: 20%;
+    height: 100%;
+    width: 100%;
+    color: white;
 }
 
 #start-container{                           /*This makes the start button central with the use of flexbox*/
@@ -120,6 +122,36 @@ button{                                     /*This centralises the buttons*/
     justify-content: center;
     align-items: center;
     height: 200px;
+}
+
+#start{
+    height: 50%;
+    width: 50%;
+    font-family: goldman;
+    color:black;
+    font-size: 3em;
+}
+
+.space{
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.space p {
+    font-size: 1.5em;
+}
+
+.flash {                           /*This makes the element flash*/
+    animation: flash 1s linear infinite;
+}
+@-webkit-keyframes flash {
+    0%, 49% {
+        background-color: #FF0000;
+    }
+    50%, 100% {
+        background-color: internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    }
 }
 
 @media screen and (max-width: 1250px){                      /*All this moves certain features if the screen gets smaller*/
