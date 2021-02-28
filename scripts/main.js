@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    var game = { //Define game config
+    var game = { 
         score: 0,
         difficulty: $("#game_difficulty").val(),
         possibilities: $(".game-button").map((i, e) => { return $(e).attr("data-button"); }).get(),
@@ -7,33 +7,33 @@ $(document).ready(() => {
         playerGuesses: []
     };
 
-    $("#high_score").text(localStorage.getItem(game.difficulty + "_mode") == null ? "0" : localStorage.getItem(game.difficulty + "_mode")); //Load saved high score
+    $("#high_score").text(localStorage.getItem(game.difficulty + "_mode") == null ? "0" : localStorage.getItem(game.difficulty + "_mode")); 
       
-    function doFlash(id) { //Do flash animation
+    function doFlash(id) { 
         $("[data-button='" + id + "']").addClass('flash');
         setTimeout(() => {
             $("[data-button='" + id + "']").removeClass('flash');
         }, 300);
     }
       
-    function addScore() { //Add score
-        game.score++; //Increase score by one
+    function addScore() { 
+        game.score++; 
         
-        game.currentGame.push(game.possibilities[(Math.floor(Math.random() * $(".game-button").length))]); //Push sequence randomly to array
+        game.currentGame.push(game.possibilities[(Math.floor(Math.random() * $(".game-button").length))]); 
         
-        var i = 0; //Current number of moves
+        var i = 0; 
         var moves = setInterval(() => {
-            doFlash(game.currentGame[i]); //Flash current button
+            doFlash(game.currentGame[i]); 
 
-            i++; //Increase number of moves by 1
+            i++; 
 
-            if (i >= game.currentGame.length) { //Check to see if number of moves is more than or equal to the saved number of moves
+            if (i >= game.currentGame.length) { 
                 clearInterval(moves);
                 $("table").removeClass("disabled");
             }
         }, 600);
 
-        game.playerGuesses = []; //Restart player guesses from previous rounds
+        game.playerGuesses = []; 
     }
       
     
@@ -48,13 +48,13 @@ $(document).ready(() => {
     });
 
     $(".game-button").on("click", (e) => {
-        let currentButton = $(e.currentTarget).attr("data-button"); //Get clicked button
+        let currentButton = $(e.currentTarget).attr("data-button"); 
 
-        game.playerGuesses.push(currentButton); //Push clicked button to player guesses
+        game.playerGuesses.push(currentButton); 
 
-        if (game.playerGuesses[game.playerGuesses.length - 1] != game.currentGame[game.playerGuesses.length - 1]) { //Check to see if the last player guess was correct
+        if (game.playerGuesses[game.playerGuesses.length - 1] != game.currentGame[game.playerGuesses.length - 1]) { 
 
-            if (game.score > localStorage.getItem(game.difficulty + "_mode")) { //if the current score is higher than previous high score, update it
+            if (game.score > localStorage.getItem(game.difficulty + "_mode")) { 
                 localStorage.setItem(game.difficulty + "_mode", (game.score - 1));
                 $("#high_score").text((game.score - 1));
             }
@@ -67,7 +67,7 @@ $(document).ready(() => {
         } else {
             var check = game.playerGuesses.length == game.currentGame.length;
             if (check) {
-                if (game.score > localStorage.getItem(game.difficulty + "_mode")) { //if the current score is higher than previous high score, update it
+                if (game.score > localStorage.getItem(game.difficulty + "_mode")) { 
                     localStorage.setItem(game.difficulty + "_mode", game.score);
                     $("#high_score").text(game.score);
                 }
