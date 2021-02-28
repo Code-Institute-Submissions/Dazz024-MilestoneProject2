@@ -187,3 +187,9 @@ button{                                     /*This centralises the buttons*/
         display: none;
     }
 }
+
+@media screen and (max-width: 500px){
+    #nav{
+        height: 300px;
+    }
+}
