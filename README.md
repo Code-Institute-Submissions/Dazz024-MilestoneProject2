@@ -16,16 +16,98 @@ User 2 - aged 16 wants:
 * The game to have increasing difficulty.
 
 ## Design
-* I main colour scheme is going to be dark blue, black and white to make it seem professional but still have a bit of colour and fun to it and its going to be very boxy to 
+### Colour Scheme
+* I main colour scheme is going to be light blue, black and white to make it fun and its going to be very boxy to have a retro feel to the site.
+
+### Font Choice
 * The two fonts I will be using is PT Sans for the main body and for any big logo headings or big eye catching titles I will use Goldman.
-* I have picked out good imagery which will catch the eye of the user which is why I have picked more dull background colours.
+
+### Media Choice
+* I have picked out good imagery which will catch the eye of the user and represents the content along side it.
 
 ### Wireframes
-[HomePage]()
+[Home Page](https://drive.google.com/file/d/17_UOgzID1HNJIbNeFWSv3qD79bDiSN2R/view?usp=sharing)
 
-[EasyPage]()
+[Easy Page](https://drive.google.com/file/d/1YiSM0qsC26PP7jAfF3ndIXsWLxs9Vtrt/view?usp=sharing)
 
-[MediumPage]()
+[Medium Page](https://drive.google.com/file/d/1VNVKvNrqMEKaKynM7rZw3GmPY00R6Yi_/view?usp=sharing)
 
-[HardPage]()
+[Hard Page](https://drive.google.com/file/d/1Dfi7-VXStClX5CI_8KXUlyH8WGGw15VO/view?usp=sharing)
 
+## Features
+### Existing Features
+1. You can view the website on any device as it is responsive.
+2. It has a number of ways to go from one page to another and even go to external sites such as social medias.
+3. There are interactive elements such as the video player and the Simon Says game.
+4. You can store your high score and try to beat it.
+
+### Missing Features
+1. It doesn't have more games than just Simon Says.
+2. It needs to have some way to share scores directly to one of the social medias automatically.
+
+## Technologies Used
+### Languages Used
+1. HTML
+2. CSS
+3. Javascript
+
+### Frameworks, Libraries & Programs Used
+1. [Google font's](https://fonts.google.com/) for PT Sans font and their Goldman font and integrated it into the website through their prebuilt script.
+2. [font awesome](https://fontawesome.com/icons?d=gallery) for their library of little icons to help to user navigate easier and make the website more user friendly.
+3. Pencil to create the wireframes for planning and design.
+4. [Google Drive](https://drive.google.com/drive/folders/18TDcl1zHzYUL-oCjNpos7cc0wtPOEWqt?usp=sharing) to store my wireframes.
+5. Git for pushing to github and maintaining version control.
+6. Github to store my repositories and to push to.
+7. jQuery for making writing Javascript easier.
+
+## Testing
+### Validator
+Firstly, I tested my code with the W3C Markup Validator and W3C CSS Validator Services to ensure there were no syntax errors in my code.
+* [W3C Markup Validator](https://validator.w3.org/#validate_by_input+with_options) - [Results](https://drive.google.com/file/d/1BSzCldyC8BWoAqVVJFOABTyvZZVmU_lF/view?usp=sharing)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input+with_options) - [Results](https://drive.google.com/file/d/1ZbH5q7b08SRqEzj9hSfhaswxcs86VOy_/view?usp=sharing)
+
+Secondly, I used JSHint to test my JavaScript to ensure there are no major issues.
+*[JSHint](https://jshint.com/) - [Results](https://drive.google.com/file/d/1aNNzHV40Xk3F06fL0iTGdozPXdo7VX5g/view?usp=sharing)
+
+### User Experience Testing
+User 1:
+* wants to have a fun game to play.
+    * I have created a fun game of Simon says.
+* wants to see their high score and what level they're on.
+    * There are current score and high score values showing at the bottom of the game and are stored into local memory.
+* wants to be able to share their score.  
+    * There are direct links to social medias at the bottom of the page.
+
+User 2:
+* wants the site to have clear instructions on how to play.
+    * There is a paragraph above every game telling you how to play it.
+* wants to see their current high score.
+    * High scores are showed at the bottom and are stored locally so it can be viewed later.
+* wants the game to have increasing difficulty.
+    * There are 3 difficulty levels each increasing the complexity of the game.
+
+### Further Testing
+* I tested the responsiveness with Google Chrome's inbuilt inspect button and also with a site called [Am I Responsive?](http://ami.responsivedesign.is/#).
+* I have tested all clickable links and the video player.
+* I have tested deploying it to GitHub Pages.
+
+## Deployment
+### Github pages
+As I will do with this website, you can deploy the project onto GitHub Pages:
+1. Log into GitHub and find this repository.
+2. Click on the cogwheel or settings button and scroll down until you find the "GitHub Pages" section.
+3. Under "Source", click the dropdown box and select "None" and select "Master Branch".
+4. Then after it refreshes scroll back down to find the new published link in the same section.
+
+## Credits
+### Content
+* [Paragraph about science of memory](https://en.wikipedia.org/wiki/Memory).
+
+### Media
+* [Hero Video](https://www.pexels.com/photo/friends-vintage-retro-screen-4842505/) Video by cottonbro from Pexels.
+* [Woman holding bulb](https://images.pexels.com/photos/3973059/pexels-photo-3973059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)Photo by Andrea Piacquadio from Pexels.
+* [Chess photo](https://images.pexels.com/photos/5477776/pexels-photo-5477776.jpeg?cs=srgb&dl=pexels-karolina-grabowska-5477776.jpg&fm=jpg)Photo by Karolina Grabowska from Pexels.
+
+### Acknowledgements
+* I took inspireation on a previous projects called Superfit and Love Running which helped me out with similar styling.
+* [W3schools](https://www.w3schools.com/html/html_tables.asp) helped me with things like creating a table in HTML.
